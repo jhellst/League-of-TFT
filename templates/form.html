@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="{{ url_for('static', path='/css/stylesheet.css') }}" rel="stylesheet">
+    <title>League of TFT - Compare Teamfight Tactics Performance with Your Friends!</title>
+</head>
+<body>
+
+    <div class="page title">
+        <h1>League of TFT</h1>
+        <p id="description">Generate insights about your game performance in Teamfight Tactics. This app displays advanced summary stats not provided in-game - learn unique insights into your TFT performance!</p>
+        <h3 id="instructions">Instructions: </h3>
+        <ol>
+            <li>Enter your selected parameters for Match Count, Region, and Summoner Name (Note: Summoner Name entered as a single summoner, or multiple summoners separate by a single comma with no spaces)</li>
+            <li>Retrieve Your API Key from the <a href="https://developer.riotgames.com/">Riot Games Developer Portal</a>*</li>
+            <li>Click Submit to see your stats summarized from the selected range of games!</li>
+            <li>Compare your advanced stats with your friends! The best statistic for comparison is "Average Placement", but additional stats such as "Average Damage", "Average Players Eliminated", and "Average Final Level" can be useful insights that can help you to improve your gameplay.</li>
+          </ol>
+    </div>
+
+    <form method="post">
+        <label>Match Count: <input type="number" name="matchcount" value="20"></label>
+        <label>Region: <input type="str" name="region" value=""></label>
+        <label>Summoner Name: <input type="str" name="summonername" value=""></label>
+        <label>API Key: <input type="str" name="apikey" value=""></label>
+        <input type="submit" value="Submit and Generate Summary Statistics">
+    </form>
+
+    <p id="footnote">* You will need an API Key to make calls to the Riot API. To do this, you will need to sign in with your Riot account at the provided link to generate a key. Please email me at jhellst@gmail.com if you have any questions, or if you would like me to provide a temporary key for demo usage.</p>
+    <h4 id="example">Example Entry:</h4>
+    <ul>
+        <li>Match Count: 20</li>
+        <li>Region: NA1</li>
+        <li>Summoner Name: noobowl,jvajeucya,raingeto</li>
+        <li>API Key: RGAPI-1e5cdbb4-a034-42fe-bbf7-905bd96e7d50</li>
+      </ul>
+
+</body>
+</html>

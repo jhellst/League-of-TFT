@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="{{ url_for('static', path='/css/stylesheet.css') }}" rel="stylesheet">
+    <title>League of TFT</title>
+</head>
+<body>
+<h1>League of Teamfight Tactics</h1>
+    {{ data|safe }}
+
+    <h2>Notes</h2>
+    <p>The ultimate goal of TFT is to be the last player standing in an 8-player free-for-all match. You spend the game accumulating resources like gold and items and making decisions to build a team of units with different strengths, weaknesses, and abilities.</p>
+    <p>A player in a game of Teamfight Tactics is referred to as a "Summoner".</p>
+    <p>All statistics provided are calculated over the selected range of matches entered under "Match Count".</p>
+
+    <h2 id="description_statistics">Description of Provided Statistics</h2>
+    <ul>
+        <li><b>Average Damage: </b>The average amount of damage dealt by the summoner per game</li>
+        <li><b>Average Placement: </b>The summoner's average placement per game (possible placements of 1st through 8th place).</li>
+        <li><b>Average Players Eliminated: </b>The average number of eliminations a summoner has per game (possible eliminations between 0 and 7).</li>
+        <li><b>Average Final Level: </b>The average level the summoner reached per game (possible levels between 1 and 9).</li>
+    </ul>
+
+</body>
+</html>
