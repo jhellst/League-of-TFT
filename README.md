@@ -7,7 +7,7 @@ Instructions:
 2) Launch browser at provided route (copy and paste terminal link in browser, e.g. http://127.0.0.1:8000)
 3) Retrieve your Riot API Key from the Riot Games Developer Portal at https://developer.riotgames.com/ - Note: You will need to login with a valid riot account to retrieve an API Key. Additionally, your API Key will need to be regenerated every 24 hours.
 4) Enter inputs for Match Count, Region, Summoner Name, and API Key. Click "Submit and Generate Summary Statistics". With a proper entry, you will be redirected to a page that details your advanced statistics such as Average Damage, Average Placement, Average Players Eliminated, and Average Final Level.
-5) To add additional summoners for comparison, refresh the url and make another entry.
+5) To include different summoners or other criteria for comparison, refresh the url and make another entry.
 
 
 
